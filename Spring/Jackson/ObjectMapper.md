@@ -84,6 +84,10 @@ protected final static Std DEFAULT = new Std(
             );
 ```
 
+여기가 중요하다. <br>
+기본 생성자로 생성한 ObjectMapper는 생성자와 Setter, 그리고 public Getter(isGetter 포함)를 이용해 프로퍼티를 찾아낸다.
+필드는 Public 필드만 감지한다. 
+
 <br>
 
 **JsonAutoDetect.Visibility**
