@@ -16,12 +16,11 @@ compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: 
 <br>
 
 
-#### Java Object를 Map으로 변환하기 
-ObjectMapper를 이용해 직접 Map으로 변환할 때 매퍼에 룰을 적용할 수 있다. 
-
-ObjectMapper.convertValue
+- [ObjectMapper] [ObjectMapper는 무엇을 기준으로 객체의 프로퍼티를 설정할까 ?](ObjectMapper.md) 
+- [ObjectMapper] convertValue를 이용하여 Object를 Map으로 변환하기
 
 
+<br>
 
 #### tip
 Spring Boot - org.springframework.boot:spring-boot-starter-web에 기본적으로 jackson 라이브러리가 포함되어 있다. 
