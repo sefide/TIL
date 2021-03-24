@@ -32,7 +32,9 @@ public class ObjectMapper
 }
 ```
 
-new ConfigOverrides()
+<br>
+
+_new ConfigOverrides()_
 ```java
 public class ConfigOverrides
     implements java.io.Serializable
@@ -49,21 +51,28 @@ public class ConfigOverrides
 }
 ```
 
-**JsonInclude.Value.empty()**
+<br>
 
-프로퍼티의 값이 null인지 공백인지 아닌지 등을 체크할지 결정한다. 
+_JsonInclude.Value.empty()_
+
+프로퍼티의 값이 null인지 공백인지 아닌지 등을 체크할지 결정한다. <br>
 USE_DEFAUTLS는 상속 정보가 있다면 부모의 설정값을 따르고 없다면 전역 직렬화 설정에 따른다. 그 외 자세한건 [javadoc](https://fasterxml.github.io/jackson-annotations/javadoc/2.9/com/fasterxml/jackson/annotation/JsonInclude.Include.html) 참고 
 ```
 protected final static Value EMPTY = new Value(Include.USE_DEFAULTS,
                 Include.USE_DEFAULTS, null, null);
 ```
-**JsonSetter.Value.empty()**
+
+<br>
+
+_JsonSetter.Value.empty()_
 
 ```
  protected final static Value EMPTY = new Value(Nulls.DEFAULT, Nulls.DEFAULT);
 ```
 
-**VisibilityChecker.Std.defaultInstance()**
+<br>
+
+_VisibilityChecker.Std.defaultInstance()_
 
 ```
 protected final static Std DEFAULT = new Std(
@@ -75,7 +84,10 @@ protected final static Std DEFAULT = new Std(
             );
 ```
 
-JsonAutoDetect.Visibility
+<br>
+
+**JsonAutoDetect.Visibility**
+
 - ANY : 접근제한자가 어떤것이든 접근, from private to public 
 - NON_PRIVATE : private 이외에 모두 접근 
 - PROTECTED_AND_PUBLIC : protected, public에만 접근 
@@ -84,7 +96,9 @@ JsonAutoDetect.Visibility
 - DEFAULT : context에 따라지는 값으로 보통 부모의 visibility에 의해 결정된다. 
 
 <br>
+
 ObjectMapper의 Visibility는 setVisibility() 메서드를 이용해 조정할 수 있다. 
+
 ```java
 objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY)
                 .setVisibility(PropertyAccessor.IS_GETTER, JsonAutoDetect.Visibility.NONE)
