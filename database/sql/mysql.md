@@ -33,6 +33,7 @@ SELECT * FROM numbers;
 https://programmers.co.kr/learn/courses/30/lessons/59413
 
 <br>
+
 참고로 oracle에서는 DUAL 테이블과 connect by 함수를 이용해 만들어 쓸 수 있다.
 ```oracle
 SELECT * FROM DUAL CONNECT BY LEVEL < 100;
