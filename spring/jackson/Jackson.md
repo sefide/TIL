@@ -17,7 +17,7 @@ compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: 
 
 
 - [ObjectMapper] [ObjectMapper는 무엇을 기준으로 객체의 프로퍼티를 설정할까 ?](ObjectMapper.md) 
-- [ObjectMapper] convertValue를 이용하여 Object를 Map으로 변환하기
+- [ObjectMapper] [convertValue를 이용하여 Object를 Map으로 변환하기](ConvertValue.md)
 
 
 <br>
