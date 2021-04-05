@@ -11,7 +11,8 @@ Spring Boot를 사용하다보면 의존성을 받아오기 위해서는 2가지
 
 <br>
 
-내가 사용하던 레포에서는 <dependencyManagement>로 spring-boot-dependencies가 선언이 되어 있었고 이로 인해 원치 않는 버전이 임포트되고 있었다. spring-boot-dependencies 내부를 살펴보면 <properties>와 <dependencyManagement>를 이용해 추가되는 의존성 버전을 관리하고 있음을 확인할 수 있다.
+내가 사용하던 레포에서는 <dependencyManagement>로 spring-boot-dependencies가 선언이 되어 있었고 이로 인해 원치 않는 버전이 임포트되고 있었다. <br>
+	spring-boot-dependencies 내부를 살펴보면 <properties>와 <dependencyManagement>를 이용해 추가되는 의존성 버전을 관리하고 있음을 확인할 수 있다.
 
 <br>
 
