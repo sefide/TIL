@@ -4,7 +4,7 @@ Spring Boot를 사용하다보면 의존성을 받아오기 위해서는 2가지
 
 <br>
 
-\<parent>
+\<parent> <br>
 \<dependencyManagement>
 
 이 두 개의 태그 중 하나를 사용하면 된다.
