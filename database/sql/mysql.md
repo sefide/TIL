@@ -44,11 +44,27 @@ SELECT * FROM DUAL CONNECT BY LEVEL < 100;
 ### 정규 표현식 사용하여 조회하기
 
 가끔 LIKE 검색을 IN절 처럼 사용하고 싶을때가 있다. <br>
-그럴 떄 유용하게 사용할 수 있는 정규표현식으로 조건 설정하는 방법이다. 
+그럴 떄 REGEXP 함수를 사용하면 된다. <br>
+
+- REGEXP() : https://dev.mysql.com/doc/refman/5.6/en/regexp.html
+- REGEXP_LIKE() (since mysql 8.0) : https://dev.mysql.com/doc/refman/8.0/en/regexp.html
+
 
 ```mysql
 SELECT menu_no
     FROM menus
     WHERE menu_name REGEXP "로제|짜장|궁중"
 ```
+위 쿼리를 수행하면 menus 테이블에 <br> 
+메뉴 이름이 "로제" 혹은 "짜장" 혹은 "궁중" 이라는 단어가 들어간 ROW가 전부 조회될 것이다. 
 
+<br>
+
+이와 같이 간단하게 LIKE IN을 구현할수도 있고 <br>
+LIKE 함수처럼 정규식 패턴을 활용하여 검색 조건을 구체화할 수 도 있다. 
+
+
+```mysql
+
+
+```
