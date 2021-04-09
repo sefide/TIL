@@ -39,3 +39,16 @@ https://programmers.co.kr/learn/courses/30/lessons/59413
 SELECT * FROM DUAL CONNECT BY LEVEL < 100;
 ```
 
+<br>
+
+### 정규 표현식 사용하여 조회하기
+
+가끔 LIKE 검색을 IN절 처럼 사용하고 싶을때가 있다. <br>
+그럴 떄 유용하게 사용할 수 있는 정규표현식으로 조건 설정하는 방법이다. 
+
+```mysql
+SELECT menu_no
+    FROM menus
+    WHERE menu_name REGEXP "로제|짜장|궁중"
+```
+
