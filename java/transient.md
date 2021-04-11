@@ -2,6 +2,7 @@
 
 
 테스트할 Dog 클래스다. 
+
 ```java
 @Getter
 @Builder
@@ -33,6 +34,7 @@ nameCode라는 변수에 transient 키워드를 선언해뒀다.
 <br> 
 
 테스트 코드는 다음과 같다. 
+
 ```java
     @Test
     void test() {
