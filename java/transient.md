@@ -87,3 +87,12 @@ public class TransientTest {
     }
 }
 ```
+
+직렬화 및 역잭렬화를 수행하고 나면, <br>
+이와 같이 readDog의 nameCode가 null인 것임을 알 수 있다.
+
+![TransientTest 디버깅](./resources/image/transient_debuging_TransientTest.png)
+
+이는 직렬화 시, transient인 nameCode의 필드는 그대로 남고 값이 null로 바뀌기 때문이다. 
+따라서 역직렬 시에는 nameCode가 null로 남게되는 것이다.  
+
