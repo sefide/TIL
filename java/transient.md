@@ -1,4 +1,5 @@
-# trasient 선언
+# transient 키워드
+
 
 
 테스트할 Dog 클래스다. 
@@ -36,6 +37,10 @@ nameCode라는 변수에 transient 키워드를 선언해뒀다.
 테스트 코드는 다음과 같다. 
 
 ```java
+public class TransientTest {
+
+    private static final String FILE_NAME = "파일 추가 경로";
+
     @Test
     void test() {
         Dog dog = Dog.builder()
@@ -80,4 +85,5 @@ nameCode라는 변수에 transient 키워드를 선언해뒀다.
 
         return Dog.empty();
     }
+}
 ```
