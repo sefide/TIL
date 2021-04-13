@@ -6,7 +6,7 @@ LocalDateTime는 (구)자바에서 쓰였던 날짜/시간 관련 클래스인 D
 
 <br>
 
-LocalDateTime.of
+**_LocalDateTime.of_**
 ```java
 public static LocalDateTime of(int year, Month month, int dayOfMonth, int hour, int minute, int second) {
     LocalDate date = LocalDate.of(year, month, dayOfMonth);
@@ -19,7 +19,7 @@ LocalDateTime은 날짜와 시간, 두 가지 개념을 가지고 있는 클래�
 
 <br>
 
-LocalDate.of
+**_LocalDate.of_**
 ```java
 public static LocalDate of(int year, Month month, int dayOfMonth) {
     YEAR.checkValidValue(year);
@@ -28,11 +28,12 @@ public static LocalDate of(int year, Month month, int dayOfMonth) {
     return create(year, month.getValue(), dayOfMonth);
 }
 ```
-LocalDate도 LocalDateTime과 마찬가지로 of 메서드를 이용해 인스턴스를 생성한다.
+LocalDate도 LocalDateTime과 마찬가지로 of 메서드를 이용해 인스턴스를 생성한다. <br>
 LocalDate에서는 날짜 정보를 직접 관리하기 때문에 년/월/일 값에 대한 유효성 체크를 진행한 후, 팩터리 메서드 create를 호출한다.
 
+<br>
 
-LocalDate.create
+**_LocalDate.create_**
 ```java
 private static LocalDate create(int year, int month, int dayOfMonth) {
     if (dayOfMonth > 28) {
@@ -63,7 +64,7 @@ private static LocalDate create(int year, int month, int dayOfMonth) {
 
 <br>
 
-LocalDate 생성자
+**_LocalDate 생성자_**
 ```java
 /**
 * Constructor, previously validated.
@@ -79,10 +80,11 @@ private 생성자를 두어 외부에서 함부로 생성할 수 없도록 제�
 
 <br>
 
+최종적으로 LocalDateTime 또한 private로 생성자를 이용해 인스턴스를 생성한다.
 ```java
 private LocalDateTime(LocalDate date, LocalTime time) {
     this.date = date;
     this.time = time;
 }
 ```
-최종적으로 LocalDateTime 또한 private로 생성자를 이용해 인스턴스를 생성한다.
+<br>
