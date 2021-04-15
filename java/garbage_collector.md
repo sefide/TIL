@@ -2,55 +2,63 @@
 
 JVM에서 동적으로 할당한 메모리 영역 중 사용하지 않는 영역을 탐지하여 해제하는 기능
 
+
 ### Mark & Sweep
 
 **Marking** 
 
-Stack의 모든 변수를 스캔하면서 메모리에서 사용되고 있는 영역을 찾아서 체크한다. (Reachable Object)
-
+Stack의 모든 변수를 스캔하면서 메모리에서 사용되고 있는 영역을 찾아서 체크한다. (Reachable Object) <br>
 Reachable Object가 참조하고 있는 객체도 찾아서 체크한다. 
 
-**Sweep  (Deletion)**
+<br>
 
+**Sweep  (Deletion)**
 UnReachable Object를 Heap에서 제거한다. 
+
+<br>
 
 ### **Heap**
 
 ![Heap 메모리 구](../resources/image/heap_memory.png)
 
-Old Generation
-
+Old Generation <br>
 Young Generation : eden, survival0, survival1
+
+<br>
 
 **Minor GC**
 
-새로운 객체는 Eden 영역에 할당
+새로운 객체는 Eden 영역에 할당 <br>
+Eden 영역이 가득차면 Minor GC 수행 <br>
 
-Eden 영역이 가득차면 Minor GC 수행
-
-Reachable Object - S0으로 할당
-
-UnReachable Object - 메모리 해제
-
-S0이 가득차게 되면 Reachable Object만 S1으로 할당
-
+Reachable Object - S0으로 할당 <br>
+UnReachable Object - 메모리 해제 <br>
+ 
+S0이 가득차게 되면 Reachable Object만 S1으로 할당 <br>
 S1이 가득차게 되면 Reachable Object만 S0으로 할당, 이 때 이동한 Object의 Age값을 할당해 영역을 이동할 때마다 Age값을 증가시킨다.
+
 
 survival 영역은 무조건 하나는 비어있어야 한다. 
 
-**Promotion**
+<br>
+
+**Promotion** 
 
 Age 값이 일정 이상이 되면 Old Generaion으로 이동
 
-**Major GC**
+<br>
+
+**Major GC** 
 
 Old Generation에서 수행하는 Garbage Collecting (Mark & Sweep) 과정
 
+<br>
+
 ### Stop The World
-
-JVM은 GC를 수행할 때 GC를 수행하는 스레드를 제외한 모든 스레드 실행을 중단시킨다.
-
+JVM은 GC를 수행할 때 GC를 수행하는 스레드를 제외한 모든 스레드 실행을 중단시킨다. <br>
 GC 작업이 완료되면 중단했던 작업을 다시 수행시키는데, 이와 같이 GC외의 작업이 멈춘 상태를 Stop-The-World라고 한다.
+
+<br>
 
 ### 종류
 
