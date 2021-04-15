@@ -21,8 +21,8 @@ UnReachable Object를 Heap에서 제거한다.
 
 ![Heap 메모리 구](../resources/image/heap_memory.png)
 
-Old Generation <br>
-Young Generation : eden, survival0, survival1
+_New(Young) Generation : eden, survival0, survival1_ <br>
+_Old Generation_ 
 
 <br>
 
