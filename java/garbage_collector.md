@@ -13,6 +13,7 @@ Reachable Object가 참조하고 있는 객체도 찾아서 체크한다.
 <br>
 
 **Sweep  (Deletion)**
+
 UnReachable Object를 Heap에서 제거한다. 
 
 <br>
