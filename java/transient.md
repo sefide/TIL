@@ -94,8 +94,7 @@ public class TransientTest {
 ![TransientTest 디버깅](../resources/image/transient_debuging_TransientTest.png)
 
 transient 필드는 기본 직렬화 시, 기본값으로 초기화된다. 
-객체인 경우 null로, 기본 숫자 타입인 경우 0으로, boolean 타입인 경우 false로 변경된다고 보면 된다.  
-이 때문에 역직렬 시 nameCode가 null로 남게 된다. 
+객체인 경우 null로, 기본 숫자 타입인 경우 0으로, boolean 타입인 경우 false로 변경된다고 보면 된다. 이 때문에 역직렬 시 nameCode가 null로 남게 된다. 
 
 이를 그대로 사용하면 안되는 경우,
 readObject 메서드의 defaultReadObject를 호출한 다음에 해당 필드를 원하는 값으로 바꿀 수 있다. 
