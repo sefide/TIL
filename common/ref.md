@@ -4,6 +4,8 @@
 **MySql Documentation** <br>
 https://dev.mysql.com/doc/refman/8.0/en/
 
+- MySql Visual Explain : https://dev.mysql.com/doc/workbench/en/wb-performance-explain.html
+- 
 
 **Github Blog** <br>
 https://github.blog/
