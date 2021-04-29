@@ -4,6 +4,7 @@
 ### what
 요청이 큐의 크기보다 많이 발생한 경우 정해둔 reject policy에 따라 task를 거절할지 어떻게 수행할지 정해진다. 
 
+<br>
 
 #### ThreadPoolExecutor에서 기본적으로 제공하는 RejectedExecutionHandler
 - **AbortPolicy** : 기본 설정값으로, TaskRejectException을 반환하며 Task를 수행을 중단한다.
@@ -42,6 +43,7 @@ public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
 
 - **커스텀 RejectedExecutionHandler** : RejectedExecutionHandler를 상속하고 rejectedExecution 메서드에 Task를 거절할 때 동작할 수행 내용을 선언해주면 된다.
 
+<br>
 
 
 ### how
@@ -51,6 +53,7 @@ public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
 - queueCapacity : 큐 개수
 - rejectExecutionHandler : 요청이 큐 이상 발생 시 task 거절 시 수행 동작 핸들러 설정
 
+<br>
 
 java
 ```java 
@@ -77,7 +80,7 @@ xml
   <property name="queueCapacity" value="100"/> 
   <property name="threadNamePrefix" value="Executor-"/> 
   <property name="rejectExecutionHandler">
-    <value="java.util.concurrent.ThreadPoolExecutor$DiscardPolicy>
+    <bean class="java.util.concurrent.ThreadPoolExecutor$DiscardPolicy>
   </property>
 </bean>
 ```
