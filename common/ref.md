@@ -20,6 +20,9 @@ https://github.com/FasterXML/jackson-databind
 **h2 database** <br> 
 http://www.h2database.com/html/main.html
 
+**Logback manual** <br>
+http://logback.qos.ch/manual/introduction.html
+
 
 ### 참고링크 
 
