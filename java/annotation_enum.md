@@ -1,14 +1,18 @@
-#Annotation 관련 Enum
+# Annotation 관련 Enum
 
-**RetentionPolicy** : 어노테이션이 어떤 레벨까지 유지/적용될지 설정 열거타입. <br>
+### RetentionPolicy
+어노테이션이 어떤 레벨까지 유지/적용될지 설정 열거타입. <br>
 메타 어노테이션인 Retention 어노테이션과 함께 사용된다. <br>
+> Annotation retention policy.  The constants of this enumerated type describe the various policies for retaining annotations.
+
 - SOURCE : 단순히 소스단에서 주석처럼 사용하기 위한 용도로 컴파일러에 의해 제거된다.   
 - CLASS : 컴파일러에 의해 class file까지 유지된다. VM에 의해 런타임에서는 제거된다.
 - RUNTIME : 런타임까지 유지된다. 
 
 <br>
 
-**ElementType** : 어노테이션이 적용되는 위치, 종류를 나타내는 열거타입. <br>
+### ElementType
+어노테이션이 적용되는 위치, 종류를 나타내는 열거타입. <br>
 Target 어노테이션과 함께 사용된다. <br>
 >  The constants of this enumerated type provide a simple classification of the syntactic locations where annotations may appear in a Java program.
 
