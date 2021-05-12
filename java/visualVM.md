@@ -20,7 +20,7 @@
 
 ### 4. VisualVM을 이용해 실행
 - 다음과 같이 Run With VisualVM, Debug With VisualVM 아이콘이 생성됨
-<img src="../resources/image/visualvm_run_and_debug_interllij.png" alt="visualVm Launcher Run" width="660">
+<img src="../resources/image/visualvm_run_and_debug_interllij.png" alt="visualVm Launcher Run" width="560">
 
 - With VisualVM으로 실행
 - VisualVm Application이 자동실행
@@ -31,10 +31,11 @@
 ## 모니터링
 
 #### 상단 탭 
-<img src="../resources/image/visualvm_tab_menu.png" alt="visualVm tab menu">
+<img src="../resources/image/visualvm_tab_menu.png" alt="visualVm tab menu" width="470">
 - Overview : 프로세스 ID, Host, JVM 설정을 확인할 수 있다. 
 - Monitor : CPU, Heap, Classes, Threads 운영의 전반전인 지표 확인
 - Threads : 스레드 운영 상황 확인, 스레드 덤프 정보
 Tools > Plugins > Available Plugins > Thread Inspector 설치를 하게 되면 활성화된 스레드의 stack trace를 확인할 수 있다. 
+<img src="../resources/image/visualvm_plugins_Threads_Inspector.png" alt="visualVm plugin thread inspector" width="610">
 - Sampler
 
