@@ -44,4 +44,6 @@
 
 ### Thread 
 
+Local Tomcat을 띄우면 자동으로 내용이 업데이트된다. 
+
 
