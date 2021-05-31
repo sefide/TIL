@@ -33,6 +33,8 @@ issue를 통해 질문하고 답변하며 오늘 알게 된 내용을 정리하�
 ### Database
 
 #### MySQL
+[MySQL 팁](database/sql/mysql_tip.md) <br>
+[인덱스에 ](database/sql/index.md) <br>
 
 
 <br>
