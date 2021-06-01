@@ -61,7 +61,7 @@ GET INDEX명/_search
       "must": [
         {
           "match": {
-            "name": "닭가슴살"
+            "contents": "닭가슴살"
           }
         }
       ]
@@ -69,6 +69,8 @@ GET INDEX명/_search
   }
 }
 ```
+=> contents 내에 닭가슴살이 들어간 document만 검색한다. <br> 
+이때 닭가슴살이 "생닭가슴살"와 같이 하나의 단어안에 속한 것이 아니라 "생 닭가슴살"과 같이 띄어쓰기나 특수문자로 구분되어 토큰화된 단어를 기분으로 검색된다. 
 
 <br>
 
@@ -81,7 +83,7 @@ GET INDEX명/_search
       "must": [
         {
           "match": {
-            "name": "닭가슴살||닭안심||닭갈비"
+            "contents": "닭가슴살||닭안심||닭갈비"
           }
         }
       ]
@@ -89,3 +91,4 @@ GET INDEX명/_search
   }
 }
 ```
+=> contents 내에 닭가슴살 혹은 닭안심 혹은 닭갈비가 들어간 모든 document를 검색한다. <br> 
