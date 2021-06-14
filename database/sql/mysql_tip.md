@@ -68,3 +68,27 @@ LIKE 함수처럼 정규식 패턴을 활용하여 검색 조건을 구체화할
 
 
 ```
+
+
+<br>
+
+### INSERT 시 중복되는 키에 대해 업데이트하기 
+
+INSERT 시 해당 테이블에 같은 키(PRIMARY KEY 혹은 UNIQUE KEY)를 가진 ROW가 존재한다면, <br> 
+새롭게 INSERT하지 않고 해당 ROW에 대해 UPDATE 할 수 있다.  <br> 
+
+> ON DUPLICATE KEY UPDATE 
+
+<br> 
+
+PRIMARY KEY가 no이고 ROW의 업데이트 날짜를 update_date라는 컬럼에서 관리하고 있다면 아래와 같이 사용할 수 있다. 
+
+```mysql
+INSERT INTO sample (no, name, create_date) VALUES (1, 'momo', now())
+ON DUPLICATE KEY
+UPDATE update_date = now()
+
+```
+
+no가 1인 ROW가 존재하는 경우, 해당 ROW의 update_date 컬럼값을 현재 시간(now())으로 업데이트한다. 
+
