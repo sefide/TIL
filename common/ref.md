@@ -1,3 +1,12 @@
+# 링크 모아두기 
+1. [공식문서](#공식문서)
+2. [참고링크](#참고링크)
+3. [읽어보면 좋은 글](#읽어보면-좋은-글)
+
+<br>
+
+---
+
 ### 공식문서
 
 **JUnit5 User Guide**
@@ -52,4 +61,13 @@ https://run-it.tistory.com/44
 
 Jackson 직렬화 옵션의 적절한 활용과 Jackson에 기여하기까지 (feat. 글로벌 캐싱) <br> 
 https://hyperconnect.github.io/2019/10/28/jackson-serialize-for-global-caching.html
+
+<br>
+
+### 읽어보면 좋은 글
+
+#### 백엔드 개발자
+
+[Naver D2]백엔드 개발자를 꿈꾸는 학생개발자에게 <br> 
+https://d2.naver.com/news/3435170
 
