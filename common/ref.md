@@ -56,6 +56,10 @@ https://ko.reactjs.org/docs/create-a-new-react-app.html
 **NextJS** <br>
 https://nextjs.org/
 
+**GraphQL** <br>
+https://graphql.org/learn/
+
+
 <br>
 
 
