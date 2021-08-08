@@ -71,7 +71,7 @@ https://graphql.org/learn/
 
 
 <br>
-
+<br>
 
 ## 참고링크 
 
@@ -93,8 +93,9 @@ Jackson 직렬화 옵션의 적절한 활용과 Jackson에 기여하기까지 (f
 https://hyperconnect.github.io/2019/10/28/jackson-serialize-for-global-caching.html
 
 <br>
+<br>
 
-### 읽어보면 좋은 글
+## 읽어보면 좋은 글
 
 #### 백엔드 개발자
 
