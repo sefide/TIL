@@ -51,7 +51,7 @@ TLSv1, TLSv1.1, TLSv1.2, TLSv1.3
 ```
 TLSv1.3은 없어도 된다.
 
-
+![Datagrip config](../resources/image/datagrip_enabled_tls_protocols.png.png)
 
 
 
