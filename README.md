@@ -7,6 +7,13 @@ issue를 통해 질문하고 답변하며 오늘 알게 된 내용을 정리하�
 
 <br>
 
+### 생각 띄우기
+
+[clear message](etc/clear_message.md) <br> 
+
+
+<br> 
+
 ### Java
 
 [equals() vs hashCode()](java/equals_and_hashCode.md) <br> 
