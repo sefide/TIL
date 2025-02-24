@@ -24,9 +24,10 @@ issue를 통해 질문하고 답변하며 오늘 알게 된 내용을 정리하�
 
 <br>
 
-### Spring 
+### Spring & Hibernate
 
 [@Transactional 어노테이션](spring/Transactional.md)
+[EntityListerner vs EventListener](spring/EntityListener_EventListener.md)
 
 #### Spring Boot
 [의존성 사용자화하는법](spring/boot/springboot_dependency.md)
